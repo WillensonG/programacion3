@@ -1,11 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/rodaja-de-naranja.png"
+    />
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <img src="images/logo.svg" class="nav__logo" />
+
+        <a href="#links" class="nav__hamburguer">
+          <img src="images/icon-hamburger.svg" class="nav__icon" />
+        </a>
+
+        <div class="nav__links" id="links">
+          <a href="#1" class="nav__link">About</a>
+          <a href="#2" class="nav__link">Services</a>
+          <a href="#" class="nav__link">Projects</a>
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox"
+            class="nav__link nav__link--cta"
+            >Contact
+          </a>
+        </div>
+      </nav>
+
+      <section class="hero__main container">
+        <h1 class="hero__title">Somos Creativos</h1>
+
+        <img src="images/icon-arrow-down.svg" class="hero__arrow" />
+      </section>
+    </header>
+
+    <main>
+      <section class="services">
+        <div class="services_image service_image--1"></div>
+
+        <div class="services__texts" id="1">
+          <h2 class="services__title">Un poco de nosotros</h2>
+          <p class="services__paragraph">
+            Somos una empresa enfocada en la importación e Exportación de
+            frutas, siendo nuestra especialidad los Citricos, todo estoy con el
+            fin de expandir los beneficios de las frutas
+          </p>
+          <a href="#" class="services__cta">Learn more</a>
+        </div>
+
+        <div class="services__image service__image--2"></div>
+
+        <div class="services__texts services__texts--2">
+          <h2 class="services__title" id="2">¿por que los Citricos?</h2>
+          <p class="services__paragraph">
+            Pues los cítricos se han convertido en un importante aliado para la
+            salud, debido sobre todo a sus elevados niveles de vitamina C. Toma
+            nota de sus propiedades nutricionales y cómo sacarles mayor partido
+            en la cocina.
+          </p>
+          <a href="#" class="services__cta">Learn more</a>
+        </div>
+      </section>
+
+      <section class="jobs">
+        <div class="jobs_section">
+          <h2 class="jobs__name">Las Toronjas</h2>
+
+          <p class="jobs__paragraph">
+            es una planta del género Citrus, de la familia de las rutáceas,
+            cultivado por su fruta, el pomelo o toronja. Es un híbrido,
+            probablemente producido de manera espontánea entre la pampelmusa y
+            la naranja dulce.
+          </p>
+        </div>
+        <div class="jobs_section jobs__section--second">
+          <h2 class="jobs__name">Las Naranjas</h2>
+
+          <p class="jobs__paragraph">
+            Siendo el producto enblema de la empresa, este fruto sin duda es el
+            rey de los citricos aportando grandes cantidades de vitaminas.
+          </p>
+        </div>
+      </section>
+
+      <section class="testimonials container">
+        <h2 class="testimonials__title">Testimonios de Clientes</h2>
+
+        <div class="testimonials__container">
+          <article class="testimonials__item">
+            <img src="images/image-emily.jpg" class="testimonials__img" />
+
+            <p class="testimonials__paragraph">
+              Estoy muy satisfecha con la calidad ofecidad por parte de esta
+              compañia.
+            </p>
+
+            <h3 class="testimonials__name">Emily R.</h3>
+            <p class="testimonials__job">Marketing Director</p>
+          </article>
+          <article class="testimonials__item">
+            <img src="images/image-thomas.jpg" class="testimonials__img" />
+
+            <p class="testimonials__paragraph">
+              Realmente complacido por este gran trabajo
+            </p>
+
+            <h3 class="testimonials__name">Thomas S.</h3>
+            <p class="testimonials__job">Chief Operating Officer</p>
+          </article>
+          <article class="testimonials__item">
+            <img src="images/image-jennie.jpg" class="testimonials__img" />
+
+            <p class="testimonials__paragraph">
+              Increible el resultado, recomiendo al 400% esta empresa
+            </p>
+
+            <h3 class="testimonials__name">Jennie F.</h3>
+            <p class="testimonials__job">Business Owner</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="gallery_image"></div>
+        <div class="gallery_image"></div>
+        <div class="gallery_image"></div>
+        <div class="gallery_image"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <form action="action_page.php">
+          <div class="container">
+            <h1>Register</h1>
+
+            <br />
+            <label for="email"><b>Email</b></label>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              id="email"
+              required
+            />
+
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              id="psw"
+              required
+            />
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input
+              type="password"
+              placeholder="Repeat Password"
+              name="psw-repeat"
+              id="psw-repeat"
+              required
+            />
+
+            <button type="submit" class="registerbtn">Register</button>
+          </div>
+
+          <div class="container signin">
+            <p>Already have an account? <a href="#">Sign in</a>.</p>
+          </div>
+        </form>
+        <nav class="footer__nav">
+          <a href="#" class="footer__link">About</a>
+          <a href="#" class="footer__link">Services</a>
+          <a href="#" class="footer__link">Projects</a>
+        </nav>
+
+        <nav class="footer__social">
+          <a href="https://web.facebook.com/?_rdc=1&_rdr" class="footer__media">
+            <img src="images/icon-facebook.svg" class="footer__icon" />
+          </a>
+          <a href="https://www.instagram.com/" class="footer__media">
+            <img src="images/icon-instagram.svg" class="footer__icon" />
+          </a>
+          <a href="https://twitter.com/?lang=es" class="footer__media">
+            <img src="images/icon-twitter.svg" class="footer__icon" />
+          </a>
+          <a href="https://www.pinterest.es/" class="footer__media">
+            <img src="images/icon-pinterest.svg" class="footer__icon" />
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
